@@ -293,6 +293,30 @@ bool IfBridge(int bus,int device, int function){
 	return ((htypeRegData >> 16) & 0xFF) & 1;
 }
 
+//---------------------------------------ZADANIE 5------------------------------------
+
+void outputCashLine(long regData){
+    fputs("------TASK 5------\n", out);
+    puts("------TASK 5------\n");
+
+    unsigned char baseClass = (regData >> 24) & 0xFF;
+    unsigned char subClass = (regData >> 16) & 0xFF;
+    unsigned char specRegLevelProgInterface = (regData >> 8) & 0xFF;
+
+    unsigned char cls = (regData) & 0xFF;
+
+    // fprintf(out, "Base class %Xh\n%Xh  %Xh\n", baseClass, subClass, specRegLevelProgInterface);
+    // printf("Base class %Xh\n%Xh  %Xh\n", baseClass, subClass, specRegLevelProgInterface);
+
+    // char* strBaseClass = getSubClass(baseClass, subClass, specRegLevelProgInterface);
+    // char* strSRLPI     = getSRLPI(baseClass, subClass, specRegLevelProgInterface);
+
+
+    fprintf(out, "Cache line size %Xh \n", cls);
+    printf("Cache line size %Xh \n", cls);
+}
+
+
 
 void PrintInfo(int bus, int device, int function) {
 	long idRegData = readRegister(bus, device, function, ID_REGISTER);
@@ -312,6 +336,7 @@ void PrintInfo(int bus, int device, int function) {
 	printf("\nNot a bridge\n\n");
 //	outputBARsData(bus, device, function);
 	outputClassCodeData(readRegister(bus,device,function, 2));
+	outputCashLine(readRegister(bus,device,function, 3));
 
 
 	}
