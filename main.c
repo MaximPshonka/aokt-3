@@ -216,6 +216,8 @@ void outputClassCodeData(long regData){
     // printf("Base class %Xh\n%Xh  %Xh\n", baseClass, subClass, specRegLevelProgInterface);
 
     char *strBaseClass = getBaseClass(baseClass, subClass, specRegLevelProgInterface);
+    char *strSubClass = getSublass(baseClass, subClass, specRegLevelProgInterface);
+    char *strBspecRegLevelProgInterface = getspecRegLevelProgInterface(baseClass, subClass, specRegLevelProgInterface);
     // char* strBaseClass = getSubClass(baseClass, subClass, specRegLevelProgInterface);
     // char* strSRLPI     = getSRLPI(baseClass, subClass, specRegLevelProgInterface);
 
@@ -230,6 +232,26 @@ char *getBaseClass(unsigned char baseClass, unsigned char subClass, unsigned cha
 	for ( i = 0; i < PCI_CLASSCODETABLE_LEN; i++) {
 	if ((baseClass == PciClassCodeTable[i].BaseClass) && (subClass == PciClassCodeTable[i].SubClass) && (specRegLevelProgInterface == PciClassCodeTable[i].ProgIf)) {
 	return PciClassCodeTable[i].BaseClass;
+	}
+	}
+	return NULL;
+}
+
+char *getSubClass(unsigned char baseClass, unsigned char subClass, unsigned char specRegLevelProgInterface) {
+	int i;
+	for ( i = 0; i < PCI_CLASSCODETABLE_LEN; i++) {
+	if ((baseClass == PciClassCodeTable[i].BaseClass) && (subClass == PciClassCodeTable[i].SubClass) && (specRegLevelProgInterface == PciClassCodeTable[i].ProgIf)) {
+	return PciClassCodeTable[i].SubClass;
+	}
+	}
+	return NULL;
+}
+
+char *getspecRegLevelProgInterface(unsigned char baseClass, unsigned char subClass, unsigned char specRegLevelProgInterface) {
+	int i;
+	for ( i = 0; i < PCI_CLASSCODETABLE_LEN; i++) {
+	if ((baseClass == PciClassCodeTable[i].BaseClass) && (subClass == PciClassCodeTable[i].SubClass) && (specRegLevelProgInterface == PciClassCodeTable[i].ProgIf)) {
+	return PciClassCodeTable[i].ProgIf;
 	}
 	}
 	return NULL;
