@@ -1,0 +1,190 @@
+0:0:0
+Vendor ID: 32902, Intel Corporation
+Device ID: 22804, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 6h
+0h  0h
+---------------------------------------------------
+0:2:0
+Vendor ID: 32902, Intel Corporation
+Device ID: 22807, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 3h
+0h  0h
+---------------------------------------------------
+0:4:0
+Vendor ID: 32902, Intel Corporation
+Device ID: 6403, Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:14:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25297, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class Ch
+3h  30h
+---------------------------------------------------
+0:14:2
+Vendor ID: 32902, Intel Corporation
+Device ID: -25295, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:15:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25248, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:15:1
+Vendor ID: 32902, Intel Corporation
+Device ID: -25247, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:16:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25286, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 7h
+80h  0h
+---------------------------------------------------
+0:17:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25341, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 1h
+6h  1h
+---------------------------------------------------
+0:1c:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25328, unknown device
+
+Is bridge
+
+ TASK 9
+I/O Base: 0xe0
+I/O Limit: 0xe0
+---------------------------------------------------
+0:1c:5
+Vendor ID: 32902, Intel Corporation
+Device ID: -25323, unknown device
+
+Is bridge
+
+ TASK 9
+I/O Base: 0xf0
+I/O Limit: 0x00
+---------------------------------------------------
+0:1e:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25305, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:1e:2
+Vendor ID: 32902, Intel Corporation
+Device ID: -25303, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 11h
+80h  0h
+---------------------------------------------------
+0:1f:0
+Vendor ID: 32902, Intel Corporation
+Device ID: -25266, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 6h
+1h  0h
+---------------------------------------------------
+0:1f:2
+Vendor ID: 32902, Intel Corporation
+Device ID: -25311, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 5h
+80h  0h
+---------------------------------------------------
+0:1f:3
+Vendor ID: 32902, Intel Corporation
+Device ID: -25231, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class 4h
+3h  0h
+---------------------------------------------------
+0:1f:4
+Vendor ID: 32902, Intel Corporation
+Device ID: -25309, unknown device
+
+Not a bridge
+
+------TASK 1------
+Base class Ch
+5h  0h
+---------------------------------------------------
+1:0:0
+Vendor ID: 4318, NVIDIA Corporation
+Device ID: 7440, GP108M [GeForce MX150]
+
+Not a bridge
+
+------TASK 1------
+Base class 3h
+2h  0h
+---------------------------------------------------
+2:0:0
+Vendor ID: 32902, Intel Corporation
+Device ID: 9469, Wireless 8265 / 8275
+
+Not a bridge
+
+------TASK 1------
+Base class 2h
+80h  0h
+---------------------------------------------------
