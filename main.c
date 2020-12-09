@@ -223,6 +223,31 @@ void outputClassCodeData(long regData){
 }
 
 
+void outputClassCode(int bus, int device, int function) {
+	fputs("------TASK 9-------\n", out);
+	puts("------TASK 9------\n");
+	long registerData = readRegister(bus, device, function, 2); // Class code + RevisionID
+	fputs("Base class: ", out);
+	puts("Base class: ");
+
+	fprintf(out, "%#lx\n ", registerData >> 24);
+	printf("%#lx\n ", registerData >> 24);
+
+	fputs("Subclass: ", out);
+	puts("Subclass: ");
+
+	fprintf(out, "%#lx\n ", (registerData & 0x00FF0000) >> 16);
+	printf("%#lx\n ", (registerData & 0x00FF0000) >> 16);
+
+	fputs("specific register level programming interface : ", out);
+	puts("specific register level programming interface : ");
+
+	fprintf(out, "%#lx\n ", (registerData & 0x0000FF00) >>  8);
+	printf("%#lx\n ", (registerData & 0x0000FF00) >>  8);
+
+}
+
+
 
 
 
@@ -335,7 +360,7 @@ void PrintInfo(int bus, int device, int function) {
 	fprintf(out, "\nNot a bridge\n\n");
 	printf("\nNot a bridge\n\n");
 //	outputBARsData(bus, device, function);
-	outputClassCodeData(readRegister(bus,device,function, 2));
+	outputClassCode(bus, device, function);
 	outputCashLine(readRegister(bus,device,function, 3));
 
 
